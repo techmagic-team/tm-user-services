@@ -40,11 +40,13 @@ module.exports = {
         'e' // for e.returnvalue
       ]
     }],
+    "max-len": [2, 120, 2, {"ignoreUrls": true}],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       optionalDependencies: ['test/unit/index.js']
     }],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'linebreak-style': 0
   }
 }
